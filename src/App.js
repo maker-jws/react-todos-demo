@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import ToDoList from "./ToDoList";
+// const ToDoList = require('./ToDoList')
 
 function App() {
+
+  const doneArray = ["Have Fun" ]
+  const notDoneArray = ["Calm Down!", "Learn React", "Learn the MERN Stack"]
+
+  // Where do we store "state" - local data? 
+  // data in react - unidirectional -> data can only come from the parent, or be defind locally
+  // if any two sibling components need to share state you should put the data at the parent level
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Hello React!</h1>
+        {/* JSX -> ToDoList */}
+        <ToDoList todos={doneArray} listName={"Complete"}/>
+        <ToDoList todos={notDoneArray} listName={"Incomplete"}/>
+        {/* props.todos -> ToDoList */}
       </header>
     </div>
   );
