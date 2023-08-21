@@ -1,5 +1,6 @@
 .container {
   padding: 1rem;
-  background-color: lightblue;
   margin-bottom: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
 }

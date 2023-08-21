@@ -1,9 +1,14 @@
 /* global styles */
 
 /* generic element style */
-
-.App-header{
-  height: 33vh;
-  padding: 0 .3rem;
+.App {
+  text-align: center;
+}
+.App-header {
+  height: 10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 0.3rem;
   background-color: lightgray;
 }

@@ -5,7 +5,7 @@ function JSPractice(props) {
     // keys -> at the parent level
     // values -> at the parent level 
 
-    // locally scope "state" -> local data used by the component
+    // locally scoped "state" -> local data used by the component
     const string = "Joshua Smith"
     
     const bestNumber = 3

@@ -15,23 +15,23 @@ function ToDoList({ todos, listName }) {
   // Array.map - instance method -> todos -> create an array of JSX elements
   const toDoListItems = todos.map(function (todoStr, idx) {
     // console.log(idx, todoStr)
-    return <ToDoItem todo={todoStr} index={idx}/>;
+    return <ToDoItem todo={todoStr} index={idx} />;
   });
+  
   // .map -> array method -> always returns a new array of values for each element in the provide/source array.
   // toDoListItems = [ <p>To Do Item</p>,]
+  
   console.log(toDoListItems);
   return (
     // all components must return a single set of tags
     <div className="container">
       {/* className is used in react for React Element */}
-      <h3>{listName}</h3>
+      {/* class is a reserved term and will cause a warning to appear in the dev console */}
+      
+      {/* <h3>{listName}</h3> */}
 
       <ul>
         {toDoListItems}
-
-        {/* props - an interface for provide data scoped at a parent component to the child component */}
-
-        {/* <JSPractice testProp={"Hello World"} firstName="Joshua"/> */}
       </ul>
     </div>
   );
