@@ -1,0 +1,10 @@
+li {
+    padding: .5rem 1rem;
+}
+
+.lavenderItem {
+    background-color: lavender;
+}
+.plumItem {
+    background-color: plum;
+}
