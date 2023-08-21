@@ -5,8 +5,8 @@ import ToDoList from "./ToDoList";
 
 function App() {
 
-  const doneArray = ["Have Fun" ]
-  const notDoneArray = ["Calm Down!", "Learn React", "Learn the MERN Stack"]
+  const doneArray = ["Have Fun" ,"Calm Down!"]
+  const notDoneArray = ["Learn React", "Learn the MERN Stack", "Finish Pt1 of the dev skills react lab", "Eat Lunch"]
 
   // Where do we store "state" - local data? 
   // data in react - unidirectional -> data can only come from the parent, or be defind locally
@@ -15,10 +15,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        
         <h1>Hello React!</h1>
+        
         {/* JSX -> ToDoList */}
-        <ToDoList todos={doneArray} listName={"Complete"}/>
-        <ToDoList todos={notDoneArray} listName={"Incomplete"}/>
+       
+        <ToDoList todos={doneArray} listName={"Done"}/>
+        <ToDoList todos={notDoneArray} listName={"Not Done"}/>
+        
         {/* props.todos -> ToDoList */}
       </header>
     </div>
