@@ -22,12 +22,3 @@ function App() {
 
 export default App;
 
-
-
-  // Where do we store "state" - ie local data? In the parent scope where the data will be used!
-
-  // data in react - unidirectional -> data can only come from the parent and be passed down to a child.
-
-  // if some state is not going to change between components/renders you can define it at the module level.
-
-  // if any two sibling components need to share state you should put the data at the parent level of the two components
