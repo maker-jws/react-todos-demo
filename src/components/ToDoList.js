@@ -1,13 +1,19 @@
 import "./ToDoList.css";
 import ToDoItem from "./ToDoItem";
 
-function ToDoList({ todos, listName }) {
+function ToDoList({ todos, listName, markCompleted }) {
   // Array.map - instance method -> todos -> create an array of JSX elements from a source array
-  const toDoListItems = todos.map(function (todoStr, idx) {
+  const toDoListItems = todos.map(function (todo, idx) {
     // Important: "key" attributes for iterators are recommended to optimize react's virtual dom diff checks
     // "keys" should be unique and not change between re-renders
     return (
-      <ToDoItem todo={todoStr} index={idx} key={idx + todoStr.slice(0, 3)} />
+      <ToDoItem
+        todo={todo.task}
+        isCompleted={todo.completed}
+        index={idx}
+        markCompleted={(e)=>markCompleted(idx)}
+        key={idx + todo.task.slice(0, 3)}
+      />
     );
   });
 
