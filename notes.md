@@ -1,0 +1,3 @@
+- AAU, I want to be able to mark to-dos as completed so that I can remove them from the list.
+- AAU, I want to see the text of a completed to-do rendered with a line through it.
+- AAU, I want to be able to remove a completed to-do from the list.
